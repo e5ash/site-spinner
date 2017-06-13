@@ -1,0 +1,405 @@
+.mobile-btn
+	margin-left: 15px
+	padding-top: 10px
+	padding-bottom: 10px
+	cursor: pointer
+	width: 115px
+	display: none
+	&.mobile-btn_close
+		.mobile-btn__hum
+			span
+				&:nth-of-type(1)
+					transform: rotate(45deg)
+					top: 10px
+				&:nth-of-type(2)
+					opacity: 0
+				&:nth-of-type(3)
+					transform: rotate(-45deg)
+					top: -10px
+.mobile-btn__text, .mobile-btn__hum
+	display: inline-block
+	vertical-align: middle
+.mobile-btn__text
+	color: white
+	font-weight: 400
+	font-size: 22px
+	margin-left: 10px
+.mobile-btn__hum
+	padding-top: 7px
+	span
+		display: block
+		width: 35px
+		height: 3px
+		margin-bottom: 7px
+		background: white
+		transition: .3s
+@media screen and (max-width: 1230px)
+	.events__img
+		width: 30%
+	.events__content
+		width: 70%
+	.tabs__nav-item
+		padding-left: 15px
+		padding-right: 15px
+@media screen and (max-width: 1210px)
+	.catalog__data
+		padding: 10px
+	.catalog__nav
+		width: 35%
+	.catalog__content
+		width: 63%
+	.catalog__banner
+		// display: none
+		width: 100%
+	.catalog__item-img
+		display: block
+		position: relative
+		margin-top: 20px
+		right: 0
+		top: 0
+		max-width: 330px
+		margin-left: auto
+		margin-right: auto
+	.catalog__subtitle, .catalog__list, .catalog__link
+		padding-left: 0
+		width: 100%
+		max-width: 735px
+	.catalog__list
+@media screen and (max-width: 1150px)
+	.info
+		padding-bottom: 0
+		.container
+			padding-left: 0
+			padding-right: 0
+		.w2
+			.col
+				width: 100%
+	.slider__list
+		padding-right: 0
+		.slick-prev
+			left: 15px
+		.slick-next
+			right: 15px
+	.slider__item
+		padding-left: 0
+	.slider__desc
+		padding-right: 20px
+	.news
+		border-top: 60px solid white
+	.news__title, .news__list, .slider__title, .slider__list
+		padding-left: 15px
+		padding-right: 15px
+	.news__list
+		padding-bottom: 40px
+	.news__date
+		left: 0
+		bottom: 0
+		position: relative
+		margin-left: auto
+		margin-right: auto
+	.news__link
+		right: 25px
+	.news__img
+		float: none
+		img
+			margin-left: auto !important
+			margin-right: auto !important
+	.news__content
+		width: 100%
+		float: none
+		margin-left: auto
+		margin-right: auto
+		padding-bottom: 10px
+		padding-right: 10px
+	.slick-dots
+		left: 0
+	.media
+		.row
+			// margin-left: -5px
+			// margin-right: -5px
+		.col
+			padding-left: 5px
+			padding-right: 5px
+	.video__content, .gallery__content, .upload__content
+		width: 100%
+		height: 184px
+		background-position: center
+		background-size: 100%
+	.video__content, .gallery__content
+		&:after
+			top: calc(50% - 35px)
+			left: calc(50% - 35px)
+	.icon-triangle-white
+		background-position: -104px -83px !important
+	.nav
+		position: relative
+		.mobile-btn
+			display: block
+		> ul
+			display: none
+			z-index: 2
+			position: absolute
+			top: 100%
+			padding-bottom: 20px
+			max-width: 100%
+			width: 100%
+			background: #49798F
+			padding-left: 0
+			padding-right: 0
+			border-top: 1px solid white
+			padding-top: 10px
+			li
+				display: block
+				> a
+					background: #49798F !important
+					color: white !important
+					font-weight: 700
+					padding-top: 8px
+					padding-bottom: 8px
+			> li
+				> ul
+					position: relative
+					opacity: 1
+					z-index: 3
+					transform: translateY(0px) !important
+					> li
+						> a
+							padding-left: 50px
+							border-bottom: none !important
+@media screen and (max-width: 1075px)
+	.tabs__nav-item
+		display: block
+		border-bottom: none !important
+		border-left: 8px solid transparent
+		border-radius: 0
+		&.tabs__nav-item_select
+			border-left: 8px solid #49798F
+	.product__tabs
+		.tabs__nav
+			padding-left: 0
+	.tabs__content
+		padding: 20px 0
+@media screen and (max-width: 1000px)
+	.contacts
+		.col
+			width: 100%
+			+ .col
+				.title
+					margin-top: 30px
+					background: white
+					margin-left: -15px
+					margin-right: -15px
+					padding: 15px
+		br
+			display: none
+	.contacts
+		p
+			font-size: 17px
+		img
+			margin-top: 20px
+	.contacts__subtitle
+		margin-bottom: 10px
+	.contacts__map
+		.title
+			margin-top: 60px
+			background: white
+			margin-left: -15px
+			margin-right: -15px
+			padding: 15px
+	.events__img
+		width: 40%
+	.events__content
+		width: 60%
+@media screen and (max-width: 970px)
+	.video__item, .product__video
+		width: 100%
+	.product__video
+		iframe
+			width: 100% !important
+			height: 300px
+	.product__features
+		tbody
+			tr
+				td
+					width: auto !important
+	.uploads__list
+		.col
+			// width: auto !important
+			// padding-left: 3px !important
+			// padding-right: 3px !important
+			// padding-bottom: 3px !important
+@media screen and (max-width: 950px)
+	.logo__text
+		display: none
+@media screen and (max-width: 850px)
+	.catalog__top
+		padding-bottom: 15px
+	.catalog__nav
+		width: 100%
+	.catalog__content
+		width: 100%
+		margin-top: 15px
+
+@media screen and (max-width: 768px)
+	.media
+		.col
+			float: none
+			width: 100%
+		.video, .gallery
+			margin-bottom: 60px
+		.video__content, .gallery__content, .upload__content
+			max-width: 360px
+			height: 222px
+			background-size: cover
+			background-position: top center
+			margin-left: auto
+			margin-right: auto
+		.gallery__title, .video__title, .upload__title
+			background: white
+			margin-left: -20px
+			margin-right: -20px
+			padding-left: 15px
+			padding-right: 15px
+		.gallery__title, .upload__title
+			padding-top: 15px
+			padding-bottom: 15px
+	.uploads__list
+		padding-top: 10px
+		padding-bottom: 10px
+		.col
+			width: auto !important
+			padding-left: 3px !important
+			padding-right: 3px !important
+	.uploads__size
+		&:before
+			content: ', '
+			margin-left: -6px
+	.uploads__list.bg-gray
+		+ .uploads__titles
+			display: none
+			margin-top: -40px
+@media screen and (max-width: 715px)
+	.events__img, .events__content
+		width: 100%
+	.events__img
+		transform: scale(1)
+		margin-bottom: 15px
+	.events__item
+		padding-top: 0
+		padding-bottom: 20px
+	.events__data, .events__desc
+		margin-bottom: 10px
+	.product__slider-item
+		line-height: normal
+		padding-bottom: 30px
+		img
+			max-width: 100%
+@media screen and (max-width: 650px)
+	.img
+		float: none !important
+		display: block
+		margin: 0 auto 10px !important
+	.banner
+		height: auto
+		background-size: cover
+	.banner__title, .banner__desc
+		width: 100%
+		background: rgba(0,0,0,.4)
+		padding-left: 15px
+		padding-right: 15px
+	.banner__title
+		font-size: 27px !important
+		&:before
+			display: none
+	.banner__desc
+		font-size: 20px
+		line-height: normal
+		padding-bottom: 40px
+	.about
+		padding-bottom: 10px
+@media screen and (max-width: 590px)
+	.panel
+		padding-top: 15px
+		padding-bottom: 15px
+	.header__logo, .header__info
+		float: none
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+	.search-block
+		width: 195px !important
+		margin-left: auto
+		margin-right: auto
+	.search-block__input
+		width: 140px !important
+	.header__info p
+		text-align: center
+	.header__logo
+		margin-bottom: 15px
+	.search-block__input
+		margin-left: auto
+		margin-right: auto
+	.catalog__data
+		.container
+			padding-left: 0
+			padding-right: 0
+	.catalog__subtitle
+		font-size: 18px
+	.catalog__list
+		margin-top: 5px
+		li
+			font-size: 14px
+			&:before
+				font-size: 18px
+				margin-right: 5px
+	.catalog__link
+		margin-top: 5px
+		&:before
+			margin-right: 5px
+	.catalog__item-img
+		img
+			max-width: 100%
+@media screen and (max-width: 550px)
+	.title
+		font-size: 20px
+
+	.media .title, .info .title, .contacts .title
+		margin-top: -42px
+
+	.product__video
+		iframe
+			height: 200px
+
+	.video__list
+		display: none !important
+@media screen and (max-width: 475px)
+	.uploads__size
+		&:before
+			content: ', '
+			margin-left: -6px
+	.uploads__item
+		padding-bottom: 50px !important
+		position: relative
+		&:nth-of-type(even)
+			margin-bottom: 10px
+	.uploads__link
+		position: absolute
+		float: none !important
+		display: block
+		margin-left: 0
+		bottom: 0
+		left: 0
+	.uploads__size
+		position: absolute
+		float: none
+		display: block
+		left: 0
+		bottom: 25px
+		&:before
+			display: none
+@media screen and (max-width: 420px)
+	.nav > ul li > a
+		padding-left: 15px
+		padding-right: 15px
+	.nav > ul > li > ul > li > a
+		padding-left: 30px
